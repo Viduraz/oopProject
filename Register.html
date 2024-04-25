@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="SCRIPTS/CSS/HomeStyle.css">
+    <link rel="stylesheet" href="SCRIPTS/CSS/Header and Footer.css">
+    <link rel="stylesheet" href="SCRIPTS/CSS/Login and register.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="./Dashboard.php"><img src="SRC/logo.png"></a> </div>
+            <ul>
+                <li><a href="Index.php" target="_self">Home</a></li>
+                <li><a href="cars.html" target="_self">Cars</a></li>
+                <li><a href="Login.php" target="_self">Reservations</a></li>
+                <li><a href="Login.html" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="login-page" id="Login">
+        <div class="form" >
+            <form class="login-form" method="POST" action="./registration.php">
+            <input type="text" placeholder="First Name" name="fname">
+            <input type="text" placeholder="Last Name" name="lname">
+            <input type="text" placeholder="E-mail" name="email">
+            <input type="text" placeholder="Username" name="Un">
+            <input type="password" placeholder="Enter password" name="pw">
+            <input type="password" placeholder="Confirm password" name="cpw">
+            <button>Sign Up</button>
+            <p class="message">Already have an account? <a href="Login.php" >Sign In</a></p>
+            </form>
+        </div>
+    </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <footer>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to contact us.</p>
+                <a href="Login.html" class="cta-button">Contact Us</a>
+            </section>
+
+
+            <p>CarVoyage Rentals</p>
+        </footer>
+</body>
+<script  src="SCRIPTS/JS/Login and Register.js"></script>
+
+</body>
+</html>

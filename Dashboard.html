@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="SCRIPTS/CSS/Header and Footer.css">
+    <link rel="stylesheet" href="SCRIPTS/CSS/Dashboard.css">
+    <link rel="stylesheet" href="SCRIPTS/CSS/HomeStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="SRC/logo.png"> </div>
+            <ul>
+                    <li><a href="Index.html" target="_self">Home</a></li>
+                    <li><a href="cars.html" target="_self">Cars</a></li>
+                    <li><a href="Login.php" target="_self">Reservations</a></li>
+                    <li><a href="Login.html" target="_self">Contact</a></li>
+                    <a href="User.php" class="Login-button">User Profile</a>
+                    <a href="Index.html" class="Login-button" id="logoutBtn">Logout</a>
+            </ul>
+        </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<section class="Welcome-Message"><br><br>
+        <h1>Explore the World with Our Cars</h1>
+        <p>Rent a car for your journey today.</p>
+        <a href="Reservations.html" class="cta-button">Book Now</a>
+        <a href="./Reserved Reservations.php" class="cta-button">Your Reservation</a>
+        <!-- <a href="./Contact Us.html" class="cta-button">Contact Us</a> -->
+        <a href="./questions.php" class="cta-button">Contact US</a>
+        
+
+        
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <footer>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to contact us.</p>
+                <a href="Contact Us.html" class="cta-button">Contact Us</a>
+            </section>
+            <!-- <p>CarVoyage Rentals</p> -->
+        </footer>
+<script>
+    document.getElementById("logoutBtn").addEventListener('click', function (){
+    document.cookie = 'UID' +'=username; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    window.location='userdboard.php';});
+</script>
+
+</body>
+</html>
